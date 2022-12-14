@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap'); /* font-family: 'Kanit', sans-serif; */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
     box-sizing: border-box;
 }
 :root {
-    --sombra: rgb(0,0,0, 0.500);
+    --sombra: rgb(0,0,0, 0.300);
 }
 header {
     background-image: linear-gradient(to right, rgb(170, 190, 255), rgb(74, 74, 161));
@@ -30,23 +31,70 @@ img {
     margin-top: 5px;
     box-shadow: 1px 1px 5px var(--sombra);
 }
-nav {
+header nav {
     margin-left: 1em;
 }
-a {
+header a {
     margin-right: 10px;
-    color: white;
+    color: rgb(168, 245, 255);
     text-decoration: none;
     transition: .3s;
     transition-timing-function: ease;
 }
-a:hover {
-    color: bisque;
+header a:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(236, 158, 255);
     font-size: 1.2em;
 }
-a:active {
-    color: rgb(255, 191, 112);
+header a:active {
+    color: rgb(64, 95, 153);
 }
-a:visited {
-    color: rgb(255, 168, 61);
+header a:visited {
+    color: rgb(238, 238, 238);
+}
+main {
+    text-shadow: 1px 1px 5px var(--sombra);
+    background-color: aliceblue;
+    padding: 20px;
+}
+main h2 {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+main a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+
+}
+main section ul li {
+    background-color: rgb(46, 175, 164);
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    margin: 1%;
+    box-shadow: 1px 1px 5px var(--sombra);
+    transition: .3s;
+    transition-timing-function: ease;
+    border-radius: 15px;
+    line-height: 50px;
+}
+main section ul li:hover {
+    transition-timing-function: ease;
+    background-image: linear-gradient(to right, rgb(23, 128, 119), rgb(94, 184, 176));
+    cursor: pointer;
+    border-radius: 5px;
+}
+main section ul {
+    display: flex;
+    flex-wrap: wrap; /* QUEBRAR LINHA QUANDO USAR TOTAL DA TELA */
+    justify-content: center;
 }
